@@ -28,6 +28,7 @@ font-family: 'Righteous', cursive; */
     justify-content: space-between;
     padding-left: 2rem;
     padding-right: 2rem;
+    overflow: hidden;
 }
 
 .navbar .logo{
@@ -97,4 +98,87 @@ span{
 
 .home-image img{
     clip-path: circle(50% at 50% 50%);
+}
+
+
+/* responsive code */
+
+@media  screen and (max-width : 1089px) {
+    
+.home-heading .p1{
+    font-size: 1.3rem;
+}
+
+.home-heading .p2{
+    font-size: 2rem;
+}
+
+.home-heading .p3{
+    font-size: 2.4rem;
+}
+
+.home-heading .p4{
+    font-size: 1.3rem;
+}
+
+.home-image img{
+    height: 20rem;
+    width: 20rem;
+}
+}
+
+
+@media screen and (max-width : 748px){
+    .home-heading .p1{
+        font-size: .9rem;
+    }
+    
+    .home-heading .p2{
+        font-size: 1.5rem;
+    }
+    
+    .home-heading .p3{
+        font-size: 1.7rem;
+    }
+    
+    .home-heading .p4{
+        font-size: .9rem;
+    }
+    
+    .home-image img{
+        height: 17rem;
+        width: 17rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar .logo{
+        font-size: 1rem; 
+        text-align: center;
+    }
+    .navs{
+        display: none;
+    }
+    .home-page{
+        margin: 1rem;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    .home-heading{
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home-image{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+        
+    .home-image img{
+        height: 10rem;
+        width: 10rem;
+    }
 }
