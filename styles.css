@@ -2,6 +2,7 @@
 /* font families
 font-family: 'Lobster', cursive;
 font-family: 'Overpass', sans-serif;
+  font-family: 'Cinzel', serif;
 font-family: 'Righteous', cursive; */
 *{
     margin: 0;
@@ -29,6 +30,8 @@ font-family: 'Righteous', cursive; */
     padding-left: 2rem;
     padding-right: 2rem;
     overflow: hidden;
+    position: fixed;
+    z-index: 1000;
 }
 
 .navbar .logo{
@@ -40,6 +43,7 @@ font-family: 'Righteous', cursive; */
 span{
     color: #0072B5;
     background-color: white;
+    border-radius: .2rem;
 }
 
 .navs ul li{
@@ -64,11 +68,15 @@ span{
     color: #0072B5;
 }
 
+.handburger{
+    display: none;
+}
+
 
 /* home section */
 
 .home-page{
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     font-family: 'Righteous', cursive;
     display: flex;
@@ -101,7 +109,7 @@ span{
 }
 
 
-/* responsive code */
+/* responsive code for home section */
 
 @media  screen and (max-width : 1089px) {
     
@@ -122,8 +130,8 @@ span{
 }
 
 .home-image img{
-    height: 20rem;
-    width: 20rem;
+    height: 18rem;
+    width: 18rem;
 }
 }
 
@@ -134,7 +142,7 @@ span{
         text-align: center;
     }
     .navs ul li a{
-        font-size: .7rem;
+        font-size: .9rem;
         margin-right : .1rem;
     }
     .home-heading .p1{
@@ -161,9 +169,10 @@ span{
 
 @media screen and (max-width: 480px) {
     .navbar{
-        display: block;
+        display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        margin-top: -4rem ;
     }
     .navbar .logo{
         font-size: 2.5rem; 
@@ -190,12 +199,108 @@ span{
         display: block;
         align-items: center;
         justify-content: center;
-        margin-top: 2.6rem;
+        margin-top: 2rem;
     }
 
     .home-image img{
-        height: 15rem;
-        width: 15rem;
+        height: 16rem;
+        width: 16rem;
     }
 
+    .handburger{
+        display: inline-block;
+        
+    }
+
+}
+
+/* about section */
+.about{
+    height: 70vh;
+    width: 100%;
+}
+
+.about h1{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    color: #0072B5;
+    font-size: 3rem;
+}
+
+.about-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.about-details .about-left{
+    flex :1;
+}
+
+.about-details .about-right{
+    flex: 1;
+}
+
+.about-right p{
+    font-size: 20px;
+    font-family: 'Overpass', sans-seri;
+    color: rgb(103, 102, 102);
+}
+
+.about-left .lottie{
+    height: 30rem;
+    width: 25rem;
+    overflow: hidden;
+    margin-top: -3rem;
+}
+
+/* responsive */
+@media screen and (max-width : 987px) {
+    .about h1{
+        font-size: 2rem;
+    }
+
+    .about-right p{
+        font-size: 18px;
+    }
+
+    .about-left .lottie{
+        height: 25rem;
+        width: 20rem;
+        margin-top: -3rem;
+    }
+}
+
+@media screen and (max-width:832px) {
+
+    .about-right p{
+        font-size: 14px;
+    }
+
+    .about-left .lottie{
+        height: 20rem;
+        width: 15rem;
+        margin-top: -3rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .about-details{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-left{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+
+    .about-left .lottie{
+        height: 15rem;
+        width: 10rem;
+    }
 }

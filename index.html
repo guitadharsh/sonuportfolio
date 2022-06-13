@@ -7,9 +7,16 @@
     <title>Sonu Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- nav bar -->
@@ -20,7 +27,7 @@
       <div class="navs">
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="">About</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="">Services</a></li>
           <li><a href="">Projects</a></li>
           <li><a href="">Contact</a></li>
@@ -29,30 +36,74 @@
       <div class="logo t">
         <p>SA</p>
       </div>
+      <div class="handburger">
+        <a href=""><i class="fa fa-bars" aria-hidden="true"></i></a>
+      </div>
     </div>
     <!-- home page -->
-    <div class="container">
-        <div class="home-page">
-            <div class="home-left">
-                <div class="home-heading">
-                    <p class="p1">Hi I'm</p>
-                    <p class="p2">Sonu</p>
-                    <p class="p3">A GRAPHIC DESIGNER</p>
-                    <p class="p4">who belives creativity is solving problems</p>
-                </div>
-            </div>
-
-            <div class="home-right">
-                <div class="home-image">
-                   <center><img src="WhatsApp_Image_2022-06-13_at_9.39.45_PM-removebg-preview.png" alt=""></center>
-                </div>
-            </div>
+    <div class="container" id="home">
+      <div class="home-page">
+        <div class="home-left">
+          <div class="home-heading">
+            <p class="p1">Hi I'm</p>
+            <p class="p2">Sonu Alex</p>
+            <p class="p3">A GRAPHIC DESIGNER</p>
+            <p class="p4">who belives creativity is solving problems</p>
+          </div>
         </div>
+
+        <div class="home-right">
+          <div class="home-image">
+            <center>
+              <img
+                src="WhatsApp_Image_2022-06-13_at_9.39.45_PM-removebg-preview.png"
+                alt=""
+              />
+            </center>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- about section -->
+    <div class="about" id="about">
+      <div class="about-heading">
+        <h1>About Me</h1>
+      </div>
+      <div class="container">
+        <div class="about-details">
+          <div class="about-left">
+            <lottie-player
+              src="https://assets1.lottiefiles.com/packages/lf20_xRmNN8.json"
+              background="transparent"
+              speed="1"
+              class="lottie"
+              autoplay loop
+            ></lottie-player>
+          </div>
+
+          <div class="about-right">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+              excepturi dicta commodi illo iste similique, vitae sunt amet nihil
+              iure cupiditate vero optio quas mollitia nulla accusamus
+              laudantium asperiores, iusto fugiat. Dolores qui tempore optio
+              obcaecati, fugiat ipsam nihil ducimus quis accusantium atque
+              impedit ratione, modi, veniam delectus doloribus ex ab iure quidem
+              Laborum, porro? Qui,
+              ratione eius. Eos iste error sit quis quia vel, sunt libero vero
+              dolorum aperiam nostrum veritatis nam. Corrupti repudiandae
+              doloremque neque, quas assumenda consectetur iusto in!
+            </p><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing. <span> -Kathija</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- services -->
     <!-- Projects -->
     <!-- Contact -->
+
     <script src="script.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>
