@@ -155,19 +155,19 @@ span{
         margin-right : .1rem;
     }
     .home-heading .p1{
-        font-size: .9rem;
+        font-size: 1rem;
     }
     
     .home-heading .p2{
-        font-size: 1.5rem;
+        font-size: 1.9rem;
     }
     
     .home-heading .p3{
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
     
     .home-heading .p4{
-        font-size: .9rem;
+        font-size: 1rem;
     }
     
     .home-image img{
@@ -177,11 +177,21 @@ span{
 }
 
 @media screen and (max-width: 480px) {
+
+    .home-page{
+        height: 50vh;
+        width: 100%;
+        font-family: 'Righteous', cursive;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .navbar{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: -4rem ;
+        position: fixed;
+        top: 0;
     }
     .navbar .logo{
         font-size: 2.5rem; 
@@ -201,7 +211,8 @@ span{
         display: block;
         justify-content: center;
         text-align: center;
-        margin-top: 4rem;
+        margin-top: 15rem;
+
     }
 
     .home-image{
@@ -214,11 +225,6 @@ span{
     .home-image img{
         height: 16rem;
         width: 16rem;
-    }
-
-    .handburger{
-        display: inline-block;
-        
     }
 
 }
@@ -296,6 +302,11 @@ span{
 }
 
 @media screen and (max-width: 480px){
+    .about{
+        height: 60vh;
+        width: 100%;
+        padding-top: 100px;
+    }
     .about-details{
         display: block;
         align-items: center;
