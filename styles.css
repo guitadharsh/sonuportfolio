@@ -363,5 +363,18 @@ span{
     font-family: 'Overpass', sans-serif;
 }
 
+/* responsive */
+@media screen and (max-width: 480px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        height: 20rem;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
 
 
