@@ -105,7 +105,16 @@ span{
 }
 
 .home-image img{
+    margin-top: 30px;
+    margin-left: 20px;
     clip-path: circle(50% at 50% 50%);
+}
+
+.home-heading .p2 span{
+    color: #0c689d;
+}
+.home-heading .p4 span{
+    color: #0c689d;
 }
 
 
@@ -216,11 +225,12 @@ span{
 
 /* about section */
 .about{
-    height: 70vh;
+    height: 130vh;
     width: 100%;
+    padding-top: 100px;
 }
 
-.about h1{
+.about .about-heading h2{
     text-align: center;
     font-family: 'Cinzel', serif;
     color: #0072B5;
@@ -304,3 +314,54 @@ span{
         width: 10rem;
     }
 }
+
+/* services page */
+.services{
+    height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.services-heading h2{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    color: #0072B5;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+}
+
+.card{
+    height: 20rem;
+    width: 30%;
+    background-color: #0072B5;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+}
+
+.card p{
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+
+.card .p1{
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
+
+
+
